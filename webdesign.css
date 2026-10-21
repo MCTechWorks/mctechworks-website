@@ -1,0 +1,640 @@
+/* WEBSITE DESIGN PAGE — HERO */
+
+main.webdesign-page {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
+    color: #f4f7ff;
+
+    background:
+        radial-gradient(
+            ellipse 100% 600px at 50% 0%,
+            rgba(20, 105, 210, 0.20),
+            transparent 100%
+        );
+}
+
+.webdesign-hero {
+    position: relative;
+    padding: 120px 24px 130px;
+    text-align: center;
+}
+
+.webdesign-hero-content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.webdesign-eyebrow {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #58b9ff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.webdesign-hero h2 {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    color: #f4f7ff;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 800;
+    line-height: 1.08;
+}
+
+.webdesign-hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #b9c7dc;
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.webdesign-hero-actions {
+    margin-top: 32px;
+}
+
+.webdesign-cta {
+    display: inline-block;
+    padding: 15px 26px;
+    border: 1px solid rgba(120, 195, 255, 0.4);
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1688ff, #00bce8);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.webdesign-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 174, 255, 0.25);
+}
+
+@media (max-width: 600px) {
+    .webdesign-hero {
+        padding: 85px 22px 95px;
+    }
+
+    .webdesign-eyebrow {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .webdesign-hero p {
+        font-size: 1rem;
+    }
+}
+
+/* WEBSITE DESIGN — OFFERINGS SECTION */
+
+.webdesign-offerings {
+    position: relative;
+    padding: 90px 24px 110px;
+    border-top: 1px solid rgba(100, 165, 255, 0.08);
+    background:
+        radial-gradient(
+            ellipse 100% 500px at 50% 50%,
+            rgba(20, 105, 210, 0.07),
+            transparent 100%
+        );
+}
+
+.webdesign-offerings-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.webdesign-offerings h2 {
+    max-width: 850px;
+    margin: 0 auto 22px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+}
+
+.webdesign-offerings-intro {
+    max-width: 760px;
+    margin: 0 auto 45px;
+    color: #b9c7dc;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.webdesign-offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    text-align: left;
+}
+
+.webdesign-offer-card {
+    padding: 30px;
+    border: 1px solid rgba(90, 160, 255, 0.2);
+    border-radius: 14px;
+    background: rgba(10, 22, 42, 0.8);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.webdesign-offer-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(65, 175, 255, 0.65);
+}
+
+.webdesign-offer-number {
+    display: block;
+    margin-bottom: 24px;
+    color: #58b9ff;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.webdesign-offer-card h3 {
+    margin: 0 0 15px;
+    color: #f4f7ff;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.webdesign-offer-card p {
+    margin: 0;
+    color: #b9c7dc;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+    .webdesign-offerings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .webdesign-offerings {
+        padding: 70px 22px 80px;
+    }
+}
+
+/* WEBSITE DESIGN — PROCESS SECTION */
+
+.webdesign-process {
+    padding: 90px 24px 110px;
+    border-top: 1px solid rgba(100, 165, 255, 0.08);
+}
+
+.webdesign-process-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.webdesign-process h2 {
+    margin: 0 auto 22px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+}
+
+.webdesign-process-intro {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    color: #b9c7dc;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.webdesign-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    text-align: left;
+}
+
+.webdesign-process-step {
+    padding: 26px;
+    border-left: 2px solid rgba(65, 175, 255, 0.55);
+    background: rgba(10, 22, 42, 0.45);
+}
+
+.webdesign-process-number {
+    display: block;
+    margin-bottom: 22px;
+    color: #58b9ff;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.webdesign-process-step h3 {
+    margin: 0 0 14px;
+    color: #f4f7ff;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.webdesign-process-step p {
+    margin: 0;
+    color: #b9c7dc;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .webdesign-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .webdesign-process {
+        padding: 70px 22px 80px;
+    }
+
+    .webdesign-process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* WEBSITE DESIGN — PRICING SECTION */
+
+.webdesign-pricing {
+    padding: 90px 24px 110px;
+    border-top: 1px solid rgba(100, 165, 255, 0.08);
+}
+
+.webdesign-pricing-content {
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.webdesign-pricing h2 {
+    margin: 0 auto 22px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+}
+
+.webdesign-pricing-intro {
+    max-width: 740px;
+    margin: 0 auto 45px;
+    color: #b9c7dc;
+    line-height: 1.8;
+}
+
+.webdesign-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    text-align: left;
+}
+
+.webdesign-price-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid rgba(90, 160, 255, 0.2);
+    border-radius: 14px;
+    background: rgba(10, 22, 42, 0.82);
+}
+
+.webdesign-price-label {
+    margin-bottom: 20px;
+    color: #58b9ff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.webdesign-price-card h3 {
+    margin: 0 0 12px;
+    color: #f4f7ff;
+    font-size: 1.25rem;
+}
+
+.webdesign-price {
+    margin: 0 0 16px;
+    color: #b9c7dc;
+}
+
+.webdesign-price strong {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.webdesign-price-description {
+    min-height: 55px;
+    color: #b9c7dc;
+    line-height: 1.7;
+}
+
+.webdesign-price-card ul {
+    padding-left: 20px;
+    margin: 10px 0 28px;
+    color: #c5d2e5;
+    line-height: 2;
+}
+
+.webdesign-pricing-link {
+    display: inline-block;
+    margin-top: auto;
+    padding: 13px 16px;
+    border: 1px solid rgba(88, 185, 255, 0.4);
+    border-radius: 7px;
+    color: #62bdff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.webdesign-pricing-link:hover {
+    background: #1688ff;
+    color: #ffffff;
+}
+
+.webdesign-pricing-note {
+    margin: 30px auto 0;
+    color: #8798b1;
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .webdesign-pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .webdesign-price-description {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .webdesign-pricing {
+        padding: 70px 22px 80px;
+    }
+
+    .webdesign-price-card {
+        padding: 25px;
+    }
+}
+
+/* WEBSITE DESIGN — FEATURED PROJECT */
+
+.webdesign-showcase {
+    padding: 90px 24px 110px;
+    border-top: 1px solid rgba(100, 165, 255, 0.08);
+    background:
+        radial-gradient(
+            ellipse 100% 500px at 50% 50%,
+            rgba(20, 105, 210, 0.06),
+            transparent 100%
+        );
+}
+
+.webdesign-showcase-content {
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.webdesign-showcase h2 {
+    margin: 0 auto 22px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+}
+
+.webdesign-showcase-intro {
+    max-width: 740px;
+    margin: 0 auto 45px;
+    color: #b9c7dc;
+    line-height: 1.8;
+}
+
+.webdesign-project {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+    gap: 35px;
+    align-items: center;
+    padding: 28px;
+    border: 1px solid rgba(90, 160, 255, 0.2);
+    border-radius: 16px;
+    background: rgba(10, 22, 42, 0.82);
+    text-align: left;
+}
+
+.webdesign-project-preview {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border: 1px solid rgba(90, 160, 255, 0.2);
+    border-radius: 10px;
+    background: #081426;
+    aspect-ratio: 16 / 10;
+}
+
+.webdesign-project-preview img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.35s ease;
+}
+
+
+.webdesign-project-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(3, 12, 26, 0.65);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.webdesign-project-preview:hover img {
+    transform: scale(1.03);
+}
+
+.webdesign-project-preview:hover .webdesign-project-overlay {
+    opacity: 1;
+}
+
+.webdesign-project-category {
+    color: #58b9ff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.webdesign-project-info h3 {
+    margin: 14px 0;
+    color: #f4f7ff;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.webdesign-project-info p {
+    margin: 0 0 25px;
+    color: #b9c7dc;
+    font-size: 0.98rem;
+    line-height: 1.8;
+}
+
+.webdesign-project-button {
+    display: inline-block;
+    padding: 14px 18px;
+    border: 1px solid rgba(88, 185, 255, 0.4);
+    border-radius: 7px;
+    background: linear-gradient(135deg, #1688ff, #00bce8);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.webdesign-project-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 174, 255, 0.2);
+}
+
+@media (max-width: 800px) {
+    .webdesign-project {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .webdesign-showcase {
+        padding: 70px 22px 80px;
+    }
+}
+
+/* WEBSITE DESIGN — CARE PLAN & FINAL CTA */
+
+.webdesign-care {
+    padding: 90px 24px 110px;
+    border-top: 1px solid rgba(100, 165, 255, 0.08);
+    background:
+        radial-gradient(
+            ellipse 100% 600px at 50% 10%,
+            rgba(20, 105, 210, 0.07),
+            transparent 100%
+        );
+}
+
+.webdesign-care-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.webdesign-care h2,
+.webdesign-final-cta h2 {
+    margin: 0 auto 22px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+}
+
+.webdesign-care-intro,
+.webdesign-final-cta p {
+    max-width: 740px;
+    margin: 0 auto 40px;
+    color: #b9c7dc;
+    line-height: 1.8;
+}
+
+/* Monthly care card */
+
+.webdesign-care-card {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 38px;
+    border: 1px solid rgba(90, 160, 255, 0.28);
+    border-radius: 16px;
+    background: rgba(10, 22, 42, 0.88);
+    text-align: left;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.webdesign-care-label {
+    display: block;
+    margin-bottom: 20px;
+    color: #58b9ff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.webdesign-care-card h3 {
+    margin: 0 0 18px;
+    color: #f4f7ff;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.webdesign-care-price {
+    margin: 0 0 15px;
+    color: #b9c7dc;
+}
+
+.webdesign-care-price strong {
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.webdesign-care-description {
+    margin: 0 0 22px;
+    color: #b9c7dc;
+    line-height: 1.7;
+}
+
+.webdesign-care-card ul {
+    padding-left: 22px;
+    margin: 0 0 25px;
+    color: #c5d2e5;
+    line-height: 2;
+}
+
+.webdesign-care-note {
+    margin: 0 0 25px;
+    color: #8798b1;
+    font-size: 0.84rem;
+    line-height: 1.7;
+}
+
+/* Closing call to action */
+
+.webdesign-final-cta {
+    margin-top: 100px;
+    padding-top: 75px;
+    border-top: 1px solid rgba(100, 165, 255, 0.12);
+}
+
+.webdesign-final-cta p {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+    .webdesign-care {
+        padding: 70px 22px 80px;
+    }
+
+    .webdesign-care-card {
+        padding: 26px;
+    }
+
+    .webdesign-final-cta {
+        margin-top: 75px;
+        padding-top: 60px;
+    }
+}

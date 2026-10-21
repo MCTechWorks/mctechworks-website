@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> MC TechWorks | PC Repair and Upgrades</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+  
+
+<header>
+    <div class="header-content">
+
+        <a href="index.html"
+           class="brand brand-home-link"
+           aria-label="MC TechWorks home">
+
+            <img src="images/Logo.png"
+                 alt="MC TechWorks Logo"
+                 class="logo">
+
+            <div class="header-text">
+                <h1>MC TECHWORKS</h1>
+                <p>PC REPAIR. UPGRADES. BUILDS. CLEANING</p>
+                <p>WEB DESIGN</p>
+            </div>
+
+        </a>
+
+        <button type="button"
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="main-nav">
+            <a href="index.html">HOME</a>
+            <a href="services.html">SERVICES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="webdesign.html">WEBSITE SERVICES</a>
+        </nav>
+
+    </div>
+</header>
+
+        <section id="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <p class="hero-tagline">SERVING COBOURG AND SURROUNDING AREA</p>
+
+            <h2>Reliable Tech Help, Right Here in Cobourg</h2>
+
+            <p class="hero-description">
+                From PC cleaning and performance upgrades to troubleshooting and custom builds, 
+                I help keep your computers and devices running smoothly — without the stress 
+                or the big-box runaround.
+            </p>
+
+            <div class="hero-buttons">
+                <a class="hero-button" href="/contact">Get in Touch</a>
+                <a class="hero-secondary" href="/services">View Services →</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <img src="images/board.jpg" alt="Circuit board">
+        </div>
+    </div>
+</section>
+
+
+    <main>
+    
+
+
+
+        <section id="services" class="home-services">
+    <div class="section-header">
+        <h2>What I Can Help With</h2>
+        <p class="section-intro">Straightforward tech services for homes and small businesses in Cobourg and the surrounding area.</p>
+    </div>
+
+    <div class="services-preview-grid">
+        <a href="/services" class="service-preview-card">
+            <h3>PC Cleaning</h3>
+            <p>Deep cleaning to keep your system cool, quiet, and running smoothly.</p>
+        </a>
+
+        <a href="/services" class="service-preview-card">
+            <h3>Upgrades & Builds</h3>
+            <p>Upgrade your current PC or get help putting together a new custom build.</p>
+        </a>
+
+        <a href="/services" class="service-preview-card">
+            <h3>Troubleshooting</h3>
+            <p>Diagnosing common computer issues and getting you back up and running.</p>
+        </a>
+
+        <a href="/services" class="service-preview-card">
+            <h3>Gaming & Controllers</h3>
+            <p>Cleaning and troubleshooting for supported gaming hardware and peripherals.</p>
+        </a>
+
+        <a href="/services" class="service-preview-card">
+            <h3>Website Services</h3>
+            <p>Custom websites for local businesses, plus ongoing maintenance when needed.</p>
+        </a>
+    </div>
+
+    <div class="services-cta">
+        <a href="/services" class="hero-button">View All Services</a>
+    </div>
+</section>
+
+        <section id="about" class="home-about">
+    <div class="about-content">
+        <h2>Local Tech Help You Can Trust</h2>
+        <p>
+            I’m based in Cobourg and help people keep their computers and devices running properly — 
+            whether that means a thorough cleaning, an upgrade, fixing a problem, or building something new.
+        </p>
+        <p>
+            No big-box runaround. No confusing tech talk. Just straightforward help for homes and small businesses 
+            in Cobourg and the surrounding area, plus website services for clients further afield.
+        </p>
+        <a href="/about" class="hero-secondary">More About Me →</a>
+    </div>
+</section>
+     
+    
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <strong>MC TechWorks</strong>
+            <p>PC Repair, Upgrades, Builds & Web Design<br>Cobourg, Ontario</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/services">Services</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/webdesign">Website Services</a>
+        </div>
+
+        <div class="footer-contact">
+            <p>Ready to get started?</p>
+            <a href="/contact" class="footer-cta">Get in Touch</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 MC TechWorks. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mainNav = document.getElementById("main-nav");
+
+    function toggleMenu() {
+        const isOpen = mainNav.classList.toggle("open");
+        menuToggle.classList.toggle("open", isOpen);
+        menuToggle.setAttribute("aria-expanded", isOpen);
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+    }
+
+    menuToggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        toggleMenu();
+    });
+</script>
+
+</body>
+</html>
+
+
